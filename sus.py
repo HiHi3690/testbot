@@ -13,7 +13,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == "$hello":
-        await message.channel.send("HELLO!")
+    if "im" in message.content.lower() or "i'm" in message.content.lower() or 'i"m' in message.content.lower():
+        await message.channel.send("your mother is fat")
 
 client.run(os.getenv("TOKEN"))
